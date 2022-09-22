@@ -21,8 +21,6 @@ This gem doesn't rely on a versioning gem and doesn't store incremental diffs of
 EOF
   spec.homepage      = "https://github.com/stevehodges/draftpunk"
   spec.license       = "MIT"
-  spec.has_rdoc      = 'yard'
-
 
   spec.required_ruby_version  = ">= 2.0.0"
 
@@ -31,14 +29,14 @@ EOF
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency     "amoeba",    "~> 3.1"
-  spec.add_runtime_dependency     "differ",    "< 0.2"
-  spec.add_runtime_dependency     'rails',     ">= 5.0", "< 5.3"
+  spec.add_runtime_dependency     "amoeba",    "~> 3.2"
+  spec.add_runtime_dependency     "differ",    "<= 0.1.2"
+  spec.add_runtime_dependency     "rails",     ">= 5.0", "< 6.2"
 
-  spec.add_development_dependency "bundler",   "~> 1.9"
-  spec.add_development_dependency "rake",      "~> 10.0"
+  spec.add_development_dependency "bundler",   "~> 2.3"
+  spec.add_development_dependency "rake",      "~> 13.0"
   spec.add_development_dependency "rspec",     "~> 2.0"
-  spec.add_development_dependency 'appraisal', '~> 2.2'
+  spec.add_development_dependency "appraisal", "~> 2.2"
   spec.add_development_dependency "timecop",   "~> 0.1"
   spec.add_development_dependency "sqlite3",   "~> 1.0"
   spec.add_development_dependency "yard",      "< 1.0"
